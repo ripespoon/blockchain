@@ -1,0 +1,12 @@
+.header {
+    background-color: $blue;
+    padding: 1.5rem 0;
+
+    &__wrapper {
+        @include website-wrapper();
+    }
+
+    &__logo {
+        max-width: 200px;
+    }
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+@import './plugins/reset';
+@import './plugins/variables';
+@import './plugins/mixins';
+
+html,
+body {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    line-height: 22px;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@import './components/header';
+@import './components/page';
+@import './components/list';
+@import './components/button';
+@import './components/modal';
+@import './components/footer';

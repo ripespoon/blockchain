@@ -1,0 +1,84 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    width: 92%;
+    max-width: 500px;
+    border-radius: .25rem;
+    background: $white;
+
+    &__header {
+        padding: 1.5rem 0;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        font-weight: 600;
+
+        &-slogan {
+            display: block;
+            font-style: italic;
+            font-size: 0.75rem;
+            font-weight: 400;
+        }
+    }
+
+    &__body {
+        padding: 2rem;
+        text-align: center;
+
+        .error {
+            color: $red;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        input {
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            border: none;
+            border-radius: .25rem;
+            padding: 1rem;
+            background-color: $blue;
+            color: $white;
+            font-size: 1rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        .converted {
+            display: block;
+            margin: 2rem auto 0 auto;
+            background: #CC9900;
+            width: 100%;
+            color: $white;
+            padding: 1rem;
+            border-radius: .25rem;
+
+            p {
+                font-weight: 600;
+            }
+
+            span {
+
+            }
+        }
+    }
+
+    &__footer {
+        background: #f4f6f9;
+        border-bottom-left-radius: .25rem;
+        border-bottom-right-radius: .25rem;
+        padding: 1rem;
+        text-align: right;
+    }
+}

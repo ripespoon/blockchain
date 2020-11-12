@@ -1,0 +1,22 @@
+.button {
+    padding: .5rem 1rem;
+    cursor: pointer;
+    background-color: rgb(20, 70, 153);
+    color: $white;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    border-radius: .25rem;
+    transition: ease all .25s;
+
+    &:hover {
+        background-color: lighten($blue, 10%);
+    }
+
+    &--disabled {
+        opacity: 0.25;
+        cursor: not-allowed;
+    }
+}
