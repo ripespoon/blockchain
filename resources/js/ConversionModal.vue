@@ -64,14 +64,14 @@ export default {
         makeConversion() {
             this.previousValue = this.value;
             this.validationError = false;
-            this.converting = true;
             this.convertedAmount = null;
 
             if (this.value === '' || this.value < 0) {
                 this.validationError = true;
-                this.converting = false;
                 return false;
             }
+            
+            this.converting = true;
 
             axios.get('https://blockchain.info/tobtc?currency=' + this.currencyCode + '&value=' + this.value).then(response => {
                 this.convertedAmount = response.data;
