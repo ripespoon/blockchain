@@ -69,6 +69,7 @@ export default {
 
             if (this.value === '' || this.value < 0) {
                 this.validationError = true;
+                this.loading = false;
                 return false;
             }
 
